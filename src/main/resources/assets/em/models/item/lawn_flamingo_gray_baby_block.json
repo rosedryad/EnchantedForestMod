@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+       "layer0": "em:items/lawn_flamingo_gray_baby_block"
+   }
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "em:mushroom_magenta_fairy_house" },
+        "facing=north": { "model": "em:mushroom_magenta_fairy_house", "y": -90  },
+        "facing=south": { "model": "em:mushroom_magenta_fairy_house", "y": 90 },
+        "facing=west": { "model": "em:mushroom_magenta_fairy_house", "y": 180 },
+        "facing=east": { "model": "em:mushroom_magenta_fairy_house"}
+        
+        }
+}

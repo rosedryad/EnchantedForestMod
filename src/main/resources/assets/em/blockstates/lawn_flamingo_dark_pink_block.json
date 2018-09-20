@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "em:lawn_flamingo_dark_pink_block" },
+        "facing=north": { "model": "em:lawn_flamingo_dark_pink_block" },
+        "facing=south": { "model": "em:lawn_flamingo_dark_pink_block", "y": 180 },
+        "facing=west": { "model": "em:lawn_flamingo_dark_pink_block", "y": 270 },
+        "facing=east": { "model": "em:lawn_flamingo_dark_pink_block", "y": 90 }
+        
+        }
+}

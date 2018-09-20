@@ -1,0 +1,51 @@
+//Items
+item.flamingo.name=Flamingo
+
+//Lawn Flamingos
+tile.lawn_flamingo_block.name=Lawn Flamingo
+tile.lawn_flamingo_dark_pink_block.name=Dark Pink Lawn Flamingo
+tile.lawn_flamingo_gray_baby_block.name=Gray Baby Lawn Flamingo
+tile.lawn_flamingo_pink_baby_block.name=Pink Baby Lawn Flamingo
+
+//Flower Fairy Houses
+tile.flower_blue_fairy_house.name=Blue Flower Fairy House
+tile.flower_pink_fairy_house.name=Pink Flower Fairy House
+tile.flower_purple_fairy_house.name=Purple Flower Fairy House
+
+//Mushroom Fairy Houses
+tile.mushroom_red_fairy_house.name=Red Mushroom Fairy House
+tile.mushroom_magenta_fairy_house.name=Magenta Mushroom Fairy House
+tile.mushroom_purple_fairy_house.name=Purple Mushroom Fairy House
+
+//Sprout Planters
+tile.sprout_planter_black_sheep.name=Black Sheep Sprout Planter
+tile.sprout_planter_brown_sheep.name=Brown Sheep Sprout Planter
+tile.sprout_planter_gray_sheep.name=Gray Sheep Sprout Planter
+tile.sprout_planter_light_gray_sheep.name=Light Gray Sheep Sprout Planter
+tile.sprout_planter_white_sheep.name=White Sheep Sprout Planter
+tile.sprout_planter_rainbow_sheep.name=Rainbow Sheep Sprout Planter
+tile.sprout_planter_red_sheep.name=Red Sheep Sprout Planter
+tile.sprout_planter_orange_sheep.name=Orange Sheep Sprout Planter
+tile.sprout_planter_yellow_sheep.name=Yellow Sheep Sprout Planter
+tile.sprout_planter_lime_sheep.name=Lime Sheep Sprout Planter
+tile.sprout_planter_green_sheep.name=Green Sheep Sprout Planter
+tile.sprout_planter_light_blue_sheep.name=Light Blue Sheep Sprout Planter
+tile.sprout_planter_cyan_sheep.name=Cyan Sheep Sprout Planter
+tile.sprout_planter_blue_sheep.name=Blue Sheep Sprout Planter
+tile.sprout_planter_pink_sheep.name=Pink Sheep Sprout Planter
+tile.sprout_planter_magenta_sheep.name=Magenta Sheep Sprout Planter
+tile.sprout_planter_purple_sheep.name=Purple Sheep Sprout Planter
+tile.sprout_planter_cow.name=Cow Sprout Planter
+tile.sprout_planter_mooshroom_cow.name=Mooshroom Cow Sprout Planter
+tile.sprout_planter_ocelot.name=Ocelot Sprout Planter
+tile.sprout_planter_pig.name=Pig Sprout Planter
+tile.sprout_planter_villager.name=Villager Sprout Planter
+tile.sprout_planter_zombie_villager.name=Zombie Villager Sprout Planter
+tile.sprout_planter_spider.name=Spider Sprout Planter
+tile.sprout_planter_creeper.name=Creeper Sprout Planter
+tile.sprout_planter_pink_creeper.name=Pink Creeper Sprout Planter
+tile.sprout_planter_enderman.name=Enderman Sprout Planter
+tile.sprout_planter_skeleton.name=Skeleton Sprout Planter
+tile.sprout_planter_wither_skeleton.name=Wither Skeleton Sprout Planter
+tile.sprout_planter_zombie.name=Zombie Sprout Planter
+tile.sprout_planter_ender_dragon.name=Ender Dragon Sprout Planter
