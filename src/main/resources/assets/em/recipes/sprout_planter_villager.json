@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "LFC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "L": {
+            "item": "minecraft:carrot"
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "C": {
+             "item": "minecraft:dye", "data": 3
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_villager", 
+        "count": 1
+    
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+  "pattern": [
+        " # ",
+        "WFR"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "W": {
+            "item": "minecraft:wool", "data": 0
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "R": {
+             "item": "minecraft:dye", "data": 1
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_red_sheep", 
+        "count": 1
+    
+    }
+}

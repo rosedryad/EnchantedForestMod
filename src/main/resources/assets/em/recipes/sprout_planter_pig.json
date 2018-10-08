@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "OFP"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "O": {
+            "item": "minecraft:porkchop"
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "P": {
+            "item": "minecraft:dye", "data": 9
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_pig", 
+        "count": 1
+    
+    }
+}

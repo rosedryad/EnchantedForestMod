@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "AFR"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "A": {
+            "item": "minecraft:red_mushroom"
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "R": {
+             "item": "minecraft:dye", "data": 1
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_mooshroom_cow", 
+        "count": 1
+    
+    }
+}

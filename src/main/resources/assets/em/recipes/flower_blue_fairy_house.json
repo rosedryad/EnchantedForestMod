@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " B ",
+        "sfs"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "minecraft:red_flower", "data": 1
+        },
+        
+         "f":
+        {
+            "item": "minecraft:flower_pot"
+        },
+        
+        "s": 
+        {
+            "item": "minecraft:stick"
+        }
+     
+    },
+    
+    "result":
+    {
+        "item": "em:flower_blue_fairy_house", 
+        "count": 1
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "WFO"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "W": {
+            "item": "minecraft:wool", "data": 0
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "O": {
+            "item": "minecraft:dye", "data": 14
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_orange_sheep", 
+        "count": 1
+    
+    }
+}

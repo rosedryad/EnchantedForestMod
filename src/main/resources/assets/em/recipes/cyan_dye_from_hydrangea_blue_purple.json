@@ -1,0 +1,14 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "cyan_dye",
+  "ingredients": [
+    {
+      "item": "em:hydrangea_blue_purple"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dye",
+    "data": 6
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " # ",
+        "#P ",
+        " # "
+    ],
+    
+    "key":
+    {
+        "#":
+        {
+            "item": "minecraft:clay_ball"
+        },
+        
+        "P": 
+        {
+            "item": "minecraft:dye", "data": 9
+        }
+     
+    },
+    
+    "result":
+    {
+        "item": "em:lawn_flamingo_block", 
+        "count": 1
+    }
+}

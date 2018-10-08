@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "LFC",
+        " R "
+        
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },            
+        "L": {
+            "item": "minecraft:carrot"
+         },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "C": {
+            "item": "minecraft:dye", "data": 2
+        },
+         "R": {
+            "item": "minecraft:rotten_flesh"
+        }
+        
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_zombie_villager", 
+        "count": 1
+    
+    }
+}

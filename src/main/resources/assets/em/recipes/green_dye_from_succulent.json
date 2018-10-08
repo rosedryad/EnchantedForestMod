@@ -1,0 +1,14 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "green_dye",
+  "ingredients": [
+    {
+      "item": "em:succulent"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dye",
+    "data": 2
+  }
+}

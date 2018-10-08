@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "GFL"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "G": {
+            "item": "minecraft:gunpowder"
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "L": {
+             "item": "minecraft:dye", "data": 10
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_creeper", 
+        "count": 1
+    
+    }
+}

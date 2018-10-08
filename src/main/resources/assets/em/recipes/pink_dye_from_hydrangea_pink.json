@@ -1,0 +1,14 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "pink_dye",
+  "ingredients": [
+    {
+      "item": "em:hydrangea_pink"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dye",
+    "data": 9
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "RFC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "R": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "C": {
+             "item": "minecraft:dye", "data": 2
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_zombie", 
+        "count": 1
+    
+    }
+}

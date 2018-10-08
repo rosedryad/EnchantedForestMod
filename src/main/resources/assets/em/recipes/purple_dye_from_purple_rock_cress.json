@@ -1,0 +1,14 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "purple_dye",
+  "ingredients": [
+    {
+      "item": "em:purple_rock_cress"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dye",
+    "data": 5
+  }
+}

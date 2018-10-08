@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "BFL"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "B": {
+            "item": "minecraft:bone"
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "L": {
+            "item": "minecraft:dye", "data": 7
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_skeleton", 
+        "count": 1
+    
+    }
+}

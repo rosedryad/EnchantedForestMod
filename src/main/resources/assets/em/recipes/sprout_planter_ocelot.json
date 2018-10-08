@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "RFD",
+        " O "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "R": {
+            "item": "minecraft:fish", "data": 0
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "D": {
+            "item": "minecraft:dye", "data": 11
+        },
+        "O": {
+            "item": "minecraft:dye", "data": 14
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_ocelot", 
+        "count": 1
+    
+    }
+}

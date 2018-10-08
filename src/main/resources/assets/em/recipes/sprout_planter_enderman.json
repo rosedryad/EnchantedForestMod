@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "DFI",
+        " P "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "D": {
+            "item": "minecraft:dirt", "data": 0
+        },
+        "F": {
+            "item": "minecraft:flower_pot"
+        },
+        "I": {
+            "item": "minecraft:dye", "data": 0
+        },
+         "P": {
+             "item": "minecraft:dye", "data": 5
+        }
+    },
+    "result": 
+    {
+        "item": "em:sprout_planter_enderman", 
+        "count": 1
+    
+    }
+}

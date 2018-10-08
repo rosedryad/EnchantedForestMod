@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " m ",
+        "sfs",
+        " M "
+    ],
+    
+    "key":
+    {
+        "m":
+        {
+            "item": "minecraft:red_mushroom"
+        },
+        
+         "f":
+        {
+            "item": "minecraft:flower_pot"
+        },
+        
+        "s": 
+        {
+            "item": "minecraft:stick"
+        },
+        
+        "M": 
+        {
+            "item": "minecraft:dye", "data": 13
+        }
+     
+    },
+    
+    "result":
+    {
+        "item": "em:mushroom_magenta_fairy_house", 
+        "count": 1
+    }
+}

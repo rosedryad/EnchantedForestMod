@@ -1,0 +1,14 @@
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "yellow_dye",
+  "ingredients": [
+    {
+      "item": "em:yellow_gerbera_daisy"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dye",
+    "data": 11
+  }
+}
