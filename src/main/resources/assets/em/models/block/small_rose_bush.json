@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "em:blocks/small_rose_bush"
+    }
+}
