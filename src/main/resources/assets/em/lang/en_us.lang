@@ -1,6 +1,13 @@
 //Items
 item.flamingo.name=Flamingo
 
+
+//Trees
+tile.log_ivy.name=Ivy Log
+tile.leaves_ivy.name=Ivy Leaves
+tile.sapling_ivy.name=Ivy Sapling
+tile.planks_ivy.name=Ivy Planks
+
 //Lawn Flamingos
 tile.lawn_flamingo_block.name=Lawn Flamingo
 tile.lawn_flamingo_dark_pink_block.name=Dark Pink Lawn Flamingo
@@ -49,3 +56,29 @@ tile.sprout_planter_skeleton.name=Skeleton Sprout Planter
 tile.sprout_planter_wither_skeleton.name=Wither Skeleton Sprout Planter
 tile.sprout_planter_zombie.name=Zombie Sprout Planter
 tile.sprout_planter_ender_dragon.name=Ender Dragon Sprout Planter
+
+//Sign Posts
+tile.flower_right_sign_post.name=Flower Right Sign Post
+
+//Flowers
+tile.small_rose_bush.name=Small Rose Bush
+tile.succulent.name=Succulent
+tile.hydrangea_pink.name=Pink Hydrangea
+tile.hydrangea_blue_purple.name=Blue Violet Hydrangea
+tile.hydrangea_purple.name=Purple Hydrangea
+tile.cat_flower.name=Cat Flower
+tile.fairy_wings_plant.name=Fairy Wings Plant
+tile.forget_me_not.name=Forget Me Not
+tile.purple_coneflower.name=Purple Coneflower
+tile.purple_rock_cress.name=Purple Rock Cress
+tile.yellow_gerbera_daisy.name=Yellow Gerbera Daisy
+
+//Ores
+tile.amethyst_ore.name=Amethyst Ore
+tile.clear_quartz_ore.name=Clear Quartz Ore
+
+//Crystals
+item.amethyst_quartz_cluster.name=Amethyst Cluster
+item.clear_quartz_cluster.name=Clear Quartz Cluster
+item.rainbow_aura_quartz_cluster.name=Rainbow Aura Quartz Cluster
+item.titanium_aura_quartz_cluster.name=Titanium Aura Quartz Cluster
