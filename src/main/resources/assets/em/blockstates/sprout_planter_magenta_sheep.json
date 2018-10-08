@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "em:sprout_planter_magenta_sheep" },
+        "facing=north": { "model": "em:sprout_planter_magenta_sheep", "y": -90  },
+        "facing=south": { "model": "em:sprout_planter_magenta_sheep", "y": 90 },
+        "facing=west": { "model": "em:sprout_planter_magenta_sheep", "y": 180 },
+        "facing=east": { "model": "em:sprout_planter_magenta_sheep" }
+        
+        }
+}

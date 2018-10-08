@@ -1,0 +1,9 @@
+{
+    "variants": {
+      
+        "check_decay=true,decayable=true,variant=ivy": { "model": "em:leaves_ivy" },
+        "check_decay=true,decayable=false,variant=ivy": { "model": "em:leaves_ivy" },
+        "check_decay=false,decayable=true,variant=ivy": { "model": "em:leaves_ivy" },
+        "check_decay=false,decayable=false,variant=ivy": { "model": "em:leaves_ivy" }
+    }
+}

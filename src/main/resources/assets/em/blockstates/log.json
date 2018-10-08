@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y,variant=ivy": { "model": "em:log_ivy" },
+        "axis=z,variant=ivy": { "model": "em:log_ivy", "x": 90 },
+        "axis=x,variant=ivy": { "model": "em:log_ivy", "x": 90, "y": 90 },
+        "axis=none,variant=ivy": { "model": "em:log_ivy" }
+    }
+}

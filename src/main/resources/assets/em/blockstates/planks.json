@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "variant=ivy": { "model": "em:planks_ivy" }        
+        }
+}

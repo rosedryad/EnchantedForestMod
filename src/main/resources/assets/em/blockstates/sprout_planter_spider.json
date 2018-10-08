@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "em:sprout_planter_spider" },
+        "facing=north": { "model": "em:sprout_planter_spider", "y": -90  },
+        "facing=south": { "model": "em:sprout_planter_spider", "y": 90 },
+        "facing=west": { "model": "em:sprout_planter_spider", "y": 180 },
+        "facing=east": { "model": "em:sprout_planter_spider" }
+        
+        }
+}

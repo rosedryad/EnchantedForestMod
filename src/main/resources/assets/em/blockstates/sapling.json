@@ -1,0 +1,7 @@
+{
+    "variants": 
+    {
+        "stage=0,variant=ivy": { "model": "em:sapling_ivy" },
+        "stage=1,variant=ivy": { "model": "em:sapling_ivy" }
+    }
+}

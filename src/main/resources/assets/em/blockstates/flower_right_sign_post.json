@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "em:flower_right_sign_post" },
+        "facing=north": { "model": "em:flower_right_sign_post", "y": -90  },
+        "facing=south": { "model": "em:flower_right_sign_post", "y": 90 },
+        "facing=west": { "model": "em:flower_right_sign_post", "y": 180 },
+        "facing=east": { "model": "em:flower_right_sign_post"}
+        
+        }
+}

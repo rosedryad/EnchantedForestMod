@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "em:sprout_planter_ender_dragon" },
+        "facing=north": { "model": "em:sprout_planter_ender_dragon", "y": -90  },
+        "facing=south": { "model": "em:sprout_planter_ender_dragon", "y": 90 },
+        "facing=west": { "model": "em:sprout_planter_ender_dragon", "y": 180 },
+        "facing=east": { "model": "em:sprout_planter_ender_dragon" }
+        
+        }
+}
