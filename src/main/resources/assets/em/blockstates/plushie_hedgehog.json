@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { "model": "em:plushie_hedgehog" },
+        "facing=north": { "model": "em:plushie_hedgehog", "y": -90  },
+        "facing=south": { "model": "em:plushie_hedgehog", "y": 90 },
+        "facing=west": { "model": "em:plushie_hedgehog", "y": 180 },
+        "facing=east": { "model": "em:plushie_hedgehog"}
+        
+        }
+}
