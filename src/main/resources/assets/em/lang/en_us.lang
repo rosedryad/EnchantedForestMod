@@ -85,3 +85,9 @@ tile.amethyst_quartz_cluster.name=Amethyst Cluster
 tile.clear_quartz_cluster.name=Clear Quartz Cluster
 tile.rainbow_aura_quartz_cluster.name=Rainbow Aura Quartz Cluster
 tile.titanium_aura_quartz_cluster.name=Titanium Aura Quartz Cluster
+
+//Crystal Blocks
+tile.amethyst_quartz_block.name=Amethyst Quartz Block
+tile.clear_quartz_block.name=Clear Quartz Block
+tile.titanium_aura_quartz_block.name=Titanium Aura Quartz Block
+tile.rainbow_aura_quartz_block.name=Rainbow Aura Quartz Block
