@@ -113,7 +113,7 @@ public class WorldGenIvyTree extends WorldGenCanopyTree {
                     this.placeLeafAt(worldIn, k1, i2 + 2, l1);
                     this.placeLeafAt(worldIn, k1 + 1, i2 + 2, l1); 
                     this.placeLeafAt(worldIn, k1 + 1, i2 + 2, l1 + 1); 
-                    this.placeLeafAt(worldIn, k1, i2 + 2, l1 + 1); // 
+                    this.placeLeafAt(worldIn, k1, i2 + 2, l1 + 1);  
                     }
 
                 for (int j3 = -3; j3 <= 4; ++j3)
@@ -243,6 +243,7 @@ public class WorldGenIvyTree extends WorldGenCanopyTree {
                     {
                         this.setBlockAndNotifyAdequately(worldIn, blockpos, this.LEAF);
                     }
+                    
                 }
             }
         }
@@ -254,6 +255,8 @@ public class WorldGenIvyTree extends WorldGenCanopyTree {
         IBlockState state = world.getBlockState(pos);
         state.getBlock().onPlantGrow(state, world, pos, source);
     }
+    
+  
 }
-
+}
 
