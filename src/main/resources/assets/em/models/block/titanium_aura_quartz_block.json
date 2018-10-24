@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+       "all": "em:blocks/titanium_aura_quartz_block"
+   }
+}

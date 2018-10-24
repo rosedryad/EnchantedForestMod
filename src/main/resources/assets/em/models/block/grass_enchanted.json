@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "particle": "em:blocks/dirt_enchanted",
+        "bottom": "em:blocks/dirt_enchanted",
+        "top": "em:blocks/grass_enchanted_top",
+        "side": "em:blocks/grass_enchanted_side"
+    }
+}
