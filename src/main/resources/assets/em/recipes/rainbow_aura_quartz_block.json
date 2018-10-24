@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "CCC",
+        "CCC",
+        "CCC"
+    ],
+    
+    "key":
+    {
+        "C":
+        {
+            "item": "em:rainbow_aura_quartz_cluster"
+        }
+     
+    },
+    
+    "result":
+    {
+        "item": "em:rainbow_aura_quartz_block", 
+        "count": 1
+    }
+}

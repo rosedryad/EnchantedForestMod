@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "#I ",
+        " F "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:book"
+        },
+        "I": {
+             "item": "minecraft:dye", "data": 0
+        },
+        "F": {
+            "item": "em:flamingo_feather"
+        }
+    },
+    "result": {
+        "item": "minecraft:writable_book",
+        "count": 1
+    }
+}

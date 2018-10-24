@@ -1,0 +1,49 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+    
+        {
+            "item": "em:clear_quartz_cluster"
+        },
+
+        {
+           "item": "minecraft:dye", "data": 13
+        },
+
+        {
+           "item": "minecraft:dye", "data": 5
+        },
+ 
+        {
+           "item": "minecraft:dye", "data": 6
+        },
+
+        {
+           "item": "minecraft:dye", "data": 11
+        },
+
+        {
+           "item": "minecraft:dye", "data": 14
+        },
+
+        {
+           "item": "minecraft:dye", "data": 2
+        },
+
+        {
+           "item": "minecraft:dye", "data": 1
+        },
+
+        {
+           "item": "minecraft:dye", "data": 8
+        }
+        
+        
+    ],
+    
+    "result":
+    {
+        "item": "em:titanium_aura_quartz_cluster", 
+        "count": 1
+    }
+}
