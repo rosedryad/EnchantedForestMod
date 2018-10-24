@@ -1,0 +1,21 @@
+
+{
+    "entity.flamingo.ambient":
+    {
+    "category": "entity",
+    "subtitle": "entity.flamingo.ambient",
+    "sounds": [{ "name": "em:entity/flamingo/ambient", "stream": true}]
+    },
+    "entity.flamingo.hurt":
+    {
+    "category": "entity",
+    "subtitle": "entity.flamingo.hurt",
+    "sounds": [{ "name": "em:entity/flamingo/hurt", "stream": true}]
+    },
+    "entity.flamingo.dead":
+    {
+    "category": "entity",
+    "subtitle": "entity.flamingo.dead",
+    "sounds": [{ "name": "em:entity/flamingo/dead", "stream": true}]
+    }
+}
