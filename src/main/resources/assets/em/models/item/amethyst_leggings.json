@@ -1,6 +1,6 @@
 {
    "parent": "item/generated",
    "textures": {
-       "layer0": "em:blocks/rainbow_aura_quartz_cluster"
+       "layer0": "em:items/amethyst_leggings"
    }
 }
