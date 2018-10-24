@@ -1,16 +1,16 @@
-package com.anacampserosrose.enchantedforestmod.items;
+package com.anacampserosrose.enchantedforestmod.items.armor;
 
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
 import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemArmor;
 
-public class ItemBase extends Item implements IHasModel {
+public class ArmorBase extends ItemArmor implements IHasModel {
 
-	public ItemBase(String name)
-	{
+	public ArmorBase(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
+		super(materialIn, renderIndexIn, equipmentSlotIn);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(EnchantedForestMod.enchantedforesttab);

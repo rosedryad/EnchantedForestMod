@@ -1,16 +1,16 @@
-package com.anacampserosrose.enchantedforestmod.items;
+package com.anacampserosrose.enchantedforestmod.items.tools;
 
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
 import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemPickaxe;
 
-public class ItemBase extends Item implements IHasModel {
+public class ToolPickaxe extends ItemPickaxe implements IHasModel {
 
-	public ItemBase(String name)
+	public ToolPickaxe(String name, ToolMaterial material)
 	{
+		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(EnchantedForestMod.enchantedforesttab);
