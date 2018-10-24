@@ -4,18 +4,20 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.anacampserosrose.enchantedforestmod.Main;
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
 import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 import com.anacampserosrose.enchantedforestmod.util.IMetaName;
 import com.anacampserosrose.enchantedforestmod.util.ItemBlockVariants;
 import com.anacampserosrose.enchantedforestmod.util.handlers.EnumHandler;
-import com.anacampserosrose.enchantedforestmod.worldgen.WorldGenIvyTree;
+import com.anacampserosrose.enchantedforestmod.world.trees.WorldGenIvyTree;
+import com.anacampserosrose.enchantedforestmod.world.trees.WorldGenPurpleWisteriaTree;
 import com.google.common.base.Predicate;
 
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.properties.PropertyInteger;
@@ -54,8 +56,9 @@ public class BlockSaplings extends BlockBush implements IGrowable, IMetaName, IH
     {
 		setUnlocalizedName(name);
 		setRegistryName(name);
+		setSoundType(SoundType.PLANT);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumType.IVY).withProperty(STAGE, Integer.valueOf(0)));
-		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		setCreativeTab(EnchantedForestMod.enchantedforesttab);
 		
 		this.name = name;
 		
@@ -136,7 +139,7 @@ public class BlockSaplings extends BlockBush implements IGrowable, IMetaName, IH
 	{
 		for(int i = 0; i < EnumHandler.EnumType.values().length; i++)
 		{
-			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "sapling_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
+			EnchantedForestMod.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "sapling_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
 		}
 	}
 	
@@ -167,6 +170,9 @@ public class BlockSaplings extends BlockBush implements IGrowable, IMetaName, IH
 		{
 		case IVY:
 			gen = new WorldGenIvyTree();
+			break;
+		case PURPLE_WISTERIA:
+			gen = new WorldGenPurpleWisteriaTree(true);
 			break;
 		}
 		

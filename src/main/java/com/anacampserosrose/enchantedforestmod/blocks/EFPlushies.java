@@ -17,11 +17,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class MushroomFairyHouse extends BlockBase {
+public class EFPlushies extends BlockBase {
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing",EnumFacing.Plane.HORIZONTAL);
 	
-	public MushroomFairyHouse(String name)
+	public EFPlushies(String name)
 	{
 		super(name, Material.PLANTS);
 		setHardness(0.8f);

@@ -2,7 +2,7 @@ package com.anacampserosrose.enchantedforestmod.blocks;
 
 import javax.annotation.Nullable;
 
-import com.anacampserosrose.enchantedforestmod.Main;
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
 import com.anacampserosrose.enchantedforestmod.util.IHasModel;
@@ -40,7 +40,7 @@ public class BlockLogs extends BlockLog implements IMetaName, IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.WOOD);
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumType.IVY).withProperty(LOG_AXIS, EnumAxis.Y));
-		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		setCreativeTab(EnchantedForestMod.enchantedforesttab);
 		
 		this.name = name;
 		
@@ -136,7 +136,7 @@ public class BlockLogs extends BlockLog implements IMetaName, IHasModel
 	{
 		for(int i = 0; i < EnumHandler.EnumType.values().length; i++)
 		{
-			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "log_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
+			EnchantedForestMod.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "log_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
 		}
 	}	
 }

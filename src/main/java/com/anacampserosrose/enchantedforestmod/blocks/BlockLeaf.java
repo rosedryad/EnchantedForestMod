@@ -1,10 +1,11 @@
 package com.anacampserosrose.enchantedforestmod.blocks;
 
 import java.util.List;
+import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.anacampserosrose.enchantedforestmod.Main;
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
 import com.anacampserosrose.enchantedforestmod.util.IHasModel;
@@ -27,6 +28,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
@@ -51,7 +53,7 @@ public class BlockLeaf extends BlockLeaves implements IMetaName, IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.PLANT);
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumType.IVY).withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(true)));
-		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		setCreativeTab(EnchantedForestMod.enchantedforesttab);
 		
 		this.name = name;
 		
@@ -98,6 +100,12 @@ public class BlockLeaf extends BlockLeaves implements IMetaName, IHasModel
 		return new ItemStack(Item.getItemFromBlock(this), 1, ((EnumHandler.EnumType)state.getValue(VARIANT)).getMeta());
 	}
 	
+
+	@Override
+	public Item getItemDropped(IBlockState state, Random random, int fortune) {
+		return Item.getItemFromBlock(ModBlocks.SAPLINGS);
+	}
+	
 	@Override
 	public int damageDropped(IBlockState state) 
 	{
@@ -138,17 +146,28 @@ public class BlockLeaf extends BlockLeaves implements IMetaName, IHasModel
 	}
 	
 	@Override
+	public int getFlammability(IBlockAccess world, BlockPos pos, EnumFacing face) {
+		return 60;
+	}
+
+	@Override
+	public int getFireSpreadSpeed(IBlockAccess world, BlockPos pos, EnumFacing face) {
+		return 30;
+	}
+	
+	@Override
 	public BlockRenderLayer getBlockLayer() 
 	{
 		return BlockRenderLayer.TRANSLUCENT;
-	}	
+	}
+
 	
 	@Override
 	public void registerModels() 
 	{
 		for(int i = 0; i < EnumHandler.EnumType.values().length; i++)
 		{
-			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "leaves_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
+			EnchantedForestMod.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "leaves_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
 		}
 	}
 }

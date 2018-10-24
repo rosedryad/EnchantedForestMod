@@ -1,6 +1,6 @@
 package com.anacampserosrose.enchantedforestmod.blocks;
 
-import com.anacampserosrose.enchantedforestmod.Main;
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -28,7 +28,7 @@ public class FlowerFairyHouse extends BlockBase {
         setSoundType(SoundType.PLANT);
         setResistance(1.0f);
         setDefaultState(blockState.getBaseState().withProperty(FACING,EnumFacing.NORTH));
-    	setCreativeTab(CreativeTabs.DECORATIONS);
+    	setCreativeTab(EnchantedForestMod.enchantedforesttab);
     }
 
      @Override

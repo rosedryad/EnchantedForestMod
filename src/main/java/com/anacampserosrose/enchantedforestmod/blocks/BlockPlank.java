@@ -1,6 +1,6 @@
 package com.anacampserosrose.enchantedforestmod.blocks;
 
-import com.anacampserosrose.enchantedforestmod.Main;
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
 import com.anacampserosrose.enchantedforestmod.util.IHasModel;
@@ -37,7 +37,7 @@ public class BlockPlank extends Block implements IMetaName, IHasModel
 		setRegistryName(name);
 		setSoundType(SoundType.WOOD);
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumType.IVY));
-		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		setCreativeTab(EnchantedForestMod.enchantedforesttab);
 		
 		this.name = name;
 		
@@ -96,7 +96,7 @@ public class BlockPlank extends Block implements IMetaName, IHasModel
 	{
 		for(int i = 0; i < EnumHandler.EnumType.values().length; i++)
 		{
-			Main.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "planks_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
+			EnchantedForestMod.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "planks_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
 		}
 	}
 }

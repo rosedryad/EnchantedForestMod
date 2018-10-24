@@ -1,6 +1,8 @@
 package com.anacampserosrose.enchantedforestmod.blocks;
 
-import com.anacampserosrose.enchantedforestmod.Main;
+import java.util.Random;
+
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
 import com.anacampserosrose.enchantedforestmod.util.IHasModel;
@@ -19,7 +21,7 @@ public class BlockBase extends Block implements IHasModel
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.DECORATIONS);
+		setCreativeTab(EnchantedForestMod.enchantedforesttab);
 		
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -28,11 +30,12 @@ public class BlockBase extends Block implements IHasModel
 	@Override
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		EnchantedForestMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 	
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return state;
 	}
+
 
 }

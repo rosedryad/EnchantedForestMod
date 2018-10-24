@@ -1,6 +1,6 @@
 package com.anacampserosrose.enchantedforestmod.blocks;
 
-import com.anacampserosrose.enchantedforestmod.Main;
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -29,7 +29,7 @@ public class LawnFlamingoBlock extends BlockBase {
 		setResistance(1.0f);
 		setLightLevel(1.0f);
 		setDefaultState(blockState.getBaseState().withProperty(FACING,EnumFacing.NORTH));
-		setCreativeTab(CreativeTabs.DECORATIONS);
+		setCreativeTab(EnchantedForestMod.enchantedforesttab);
 	}
 
 	 @Override

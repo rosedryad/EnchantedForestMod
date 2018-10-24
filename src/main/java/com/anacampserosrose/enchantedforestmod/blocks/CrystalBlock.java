@@ -11,20 +11,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 
-public class AmethystOre extends BlockBase {
+public class CrystalBlock extends BlockBase {
 
-	public AmethystOre(String name, Material material) {
+	public CrystalBlock(String name, Material material) {
 		super(name, material);
 		setSoundType(SoundType.METAL);
 		setHardness(3.0F);
 		setResistance(15.0F);
 		setHarvestLevel("pickaxe", 2);
-	}
-	
-	@Override
-	public int quantityDropped(Random rand) {
-		int max = 1;
-		int min = 1;
-		return rand.nextInt(max) + min;
 	}
 }

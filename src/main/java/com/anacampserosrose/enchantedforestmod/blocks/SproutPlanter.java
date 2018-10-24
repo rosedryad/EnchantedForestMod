@@ -1,6 +1,6 @@
 package com.anacampserosrose.enchantedforestmod.blocks;
 
-import com.anacampserosrose.enchantedforestmod.Main;
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -25,7 +25,7 @@ public class SproutPlanter extends BlockBase {
 		setHardness(1f);
 		setSoundType(SoundType.GLASS);
 		setResistance(1.0f);
-		setCreativeTab(CreativeTabs.DECORATIONS);
+		setCreativeTab(EnchantedForestMod.enchantedforesttab);
 	}
 
 	public boolean isOpaqueCube(IBlockState state)
