@@ -6,40 +6,67 @@ import java.util.List;
 import com.anacampserosrose.enchantedforestmod.blocks.LawnFlamingoBlock;
 import com.anacampserosrose.enchantedforestmod.blocks.MushroomFairyHouse;
 import com.anacampserosrose.enchantedforestmod.blocks.ClearQuartzOre;
+import com.anacampserosrose.enchantedforestmod.blocks.CrystalBlock;
+import com.anacampserosrose.enchantedforestmod.blocks.CrystalCluster;
 import com.anacampserosrose.enchantedforestmod.blocks.SignPost;
 import com.anacampserosrose.enchantedforestmod.blocks.SproutPlanter;
 import com.anacampserosrose.enchantedforestmod.util.Reference;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+import com.anacampserosrose.enchantedforestmod.blocks.AmethystFairyOre;
 import com.anacampserosrose.enchantedforestmod.blocks.AmethystOre;
+import com.anacampserosrose.enchantedforestmod.blocks.BlockEnchantedDirt;
+import com.anacampserosrose.enchantedforestmod.blocks.BlockEnchantedGrass;
 import com.anacampserosrose.enchantedforestmod.blocks.BlockLeaf;
 import com.anacampserosrose.enchantedforestmod.blocks.BlockLogs;
 import com.anacampserosrose.enchantedforestmod.blocks.BlockPlank;
 import com.anacampserosrose.enchantedforestmod.blocks.BlockSaplings;
+import com.anacampserosrose.enchantedforestmod.blocks.ClearCrystalCluster;
 import com.anacampserosrose.enchantedforestmod.blocks.EFFlower;
+import com.anacampserosrose.enchantedforestmod.blocks.EFPlushies;
+import com.anacampserosrose.enchantedforestmod.blocks.IvyVines;
 import com.anacampserosrose.enchantedforestmod.blocks.FlowerFairyHouse;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ModBlocks 
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
+	
+	//Grass
+	public static final Block DIRT_ENCHANTED = new BlockEnchantedDirt("dirt_enchanted", Material.GRASS);
+	public static final Block GRASS_ENCHANTED = new BlockEnchantedGrass("grass_enchanted", Material.GRASS);
 	
 	//Trees
 	public static final Block PlANKS = new BlockPlank("planks");
 	public static final Block LOGS = new BlockLogs("log");
 	public static final Block LEAVES = new BlockLeaf("leaves");
 	public static final Block SAPLINGS = new BlockSaplings("sapling");
+	//TODO: Add ivy vine to WorldGenIvyTree
+	public static final Block IVY_VINE = new IvyVines("ivy_vine", Material.VINE);
 	
 	//Ores
 	public static final Block CLEAR_QUARTZ_ORE = new ClearQuartzOre("clear_quartz_ore", Material.ROCK);
 	public static final Block AMETHYST_ORE = new AmethystOre("amethyst_ore", Material.ROCK);
+	//TODO: Add redstone sparkles:
+	public static final Block AMETHYST_FAIRY_ORE = new AmethystFairyOre("amethyst_fairy_ore", Material.ROCK);
+	
+	//Crystal Clusters
+	public static final Block CLEAR_QUARTZ_CLUSTER = new ClearCrystalCluster("clear_quartz_cluster", Material.ROCK);
+	public static final Block AMETHYST_QUARTZ_CLUSTER = new CrystalCluster("amethyst_quartz_cluster", Material.ROCK);
+	public static final Block RAINBOW_AURA_QUARTZ_CLUSTER = new CrystalCluster("rainbow_aura_quartz_cluster", Material.ROCK);
+	public static final Block TITANIUM_AURA_QUARTZ_CLUSTER = new CrystalCluster("titanium_aura_quartz_cluster", Material.ROCK);
+	public static final Block AMETHYST_FAIRY_QUARTZ_CLUSTER = new CrystalCluster("amethyst_fairy_quartz_cluster", Material.ROCK);
+	
+	//Crystal Blocks
+	public static final Block CLEAR_QUARTZ_BLOCK = new CrystalBlock("clear_quartz_block", Material.ROCK);
+	public static final Block AMETHYST_QUARTZ_BLOCK = new CrystalBlock("amethyst_quartz_block", Material.ROCK);
+	public static final Block RAINBOW_AURA_QUARTZ_BLOCK = new CrystalBlock("rainbow_aura_quartz_block", Material.ROCK);
+	public static final Block TITANIUM_AURA_QUARTZ_BLOCK = new CrystalBlock("titanium_aura_quartz_block", Material.ROCK);
+	
+	//Plushies
+	public static final Block PLUSHIE_HEDGEHOG = new EFPlushies("plushie_hedgehog");
 	
 	//Lawn Flamingos
 	public static final Block LAWN_FLAMINGO_BLOCK = new LawnFlamingoBlock("lawn_flamingo_block");
@@ -47,7 +74,7 @@ public class ModBlocks
 	public static final Block LAWN_FLAMINGO_GRAY_BABY_BLOCK = new LawnFlamingoBlock("lawn_flamingo_gray_baby_block");
 	public static final Block LAWN_FLAMINGO_PINK_BABY_BLOCK = new LawnFlamingoBlock("lawn_flamingo_pink_baby_block");
 
-	//Fairy Houses
+	//Flower Fairy Houses
 	public static final Block FLOWER_BLUE_FAIRY_HOUSE = new FlowerFairyHouse("flower_blue_fairy_house");
 	public static final Block FLOWER_PINK_FAIRY_HOUSE = new FlowerFairyHouse("flower_pink_fairy_house");
 	public static final Block FLOWER_PURPLE_FAIRY_HOUSE = new FlowerFairyHouse("flower_purple_fairy_house");
@@ -57,7 +84,7 @@ public class ModBlocks
 	public static final Block MUSHROOM_PURPLE_FAIRY_HOUSE = new MushroomFairyHouse("mushroom_purple_fairy_house");
 	public static final Block MUSHROOM_RED_FAIRY_HOUSE = new MushroomFairyHouse("mushroom_red_fairy_house");
 	
-	//Planters
+	//Sprout Planters
 	public static final Block SPROUT_PLANTER_BLACK_SHEEP = new SproutPlanter("sprout_planter_black_sheep");
 	public static final Block SPROUT_PLANTER_BROWN_SHEEP = new SproutPlanter("sprout_planter_brown_sheep");
 	public static final Block SPROUT_PLANTER_GRAY_SHEEP = new SproutPlanter("sprout_planter_gray_sheep");
@@ -90,12 +117,14 @@ public class ModBlocks
     public static final Block SPROUT_PLANTER_ZOMBIE = new SproutPlanter("sprout_planter_zombie");
     public static final Block SPROUT_PLANTER_ENDER_DRAGON = new SproutPlanter("sprout_planter_ender_dragon");
 	
-	//Sign Posts - not functional yet
-	public static final Block FLOWER_RIGHT_SIGN_POST = new SignPost("flower_right_sign_post");
+	//Sign Posts
+    //TODO: Make writeable
+	public static final Block FLOWER_SIGN_POST_LEFT = new SignPost("flower_sign_post_left");
+	public static final Block FLOWER_SIGN_POST_RIGHT = new SignPost("flower_sign_post_right");
 
-	//Flowers - does not generate yet
+	//Flowers
+	//TODO: Make FlowerGen
 	public static final Block SMALL_ROSE_BUSH = new EFFlower("small_rose_bush", Material.PLANTS);
-	//redo succulent png?
 	public static final Block SUCCULENT = new EFFlower("succulent", Material.PLANTS);
 	public static final Block HYDRANGEA_PINK = new EFFlower("hydrangea_pink", Material.PLANTS);
 	public static final Block HYDRANGEA_PURPLE = new EFFlower("hydrangea_purple", Material.PLANTS);
@@ -106,5 +135,5 @@ public class ModBlocks
 	public static final Block PURPLE_CONEFLOWER = new EFFlower("purple_coneflower", Material.PLANTS);
 	public static final Block PURPLE_ROCK_CRESS = new EFFlower("purple_rock_cress", Material.PLANTS);
 	public static final Block YELLOW_GERBERA_DAISY = new EFFlower("yellow_gerbera_daisy", Material.PLANTS);
-	
+
 }
