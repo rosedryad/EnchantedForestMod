@@ -8,6 +8,7 @@ import com.anacampserosrose.enchantedforestmod.items.ItemFlamingoFeather;
 import com.anacampserosrose.enchantedforestmod.items.armor.ArmorBase;
 import com.anacampserosrose.enchantedforestmod.items.tools.ItemTransformationWand;
 import com.anacampserosrose.enchantedforestmod.items.tools.ToolAxe;
+import com.anacampserosrose.enchantedforestmod.items.tools.ToolFlamingoSword;
 import com.anacampserosrose.enchantedforestmod.items.tools.ToolHoe;
 import com.anacampserosrose.enchantedforestmod.items.tools.ToolPickaxe;
 import com.anacampserosrose.enchantedforestmod.items.tools.ToolShovel;
@@ -33,6 +34,8 @@ public class ModItems {
 	//Tool Materials
 	//
 	public static final ToolMaterial MATERIAL_AMETHYST = EnumHelper.addToolMaterial("material_amethyst", 3, 1721, 9.0F, 3.5F, 15);
+	public static final ToolMaterial MATERIAL_FLAMINGO = EnumHelper.addToolMaterial("material_flamingo", 3, 3000, 9.0F, 5F, 20);
+	
 	
 	//Armor Materials
 	public static final ArmorMaterial ARMOR_MATERIAL_AMETHYST = EnumHelper.addArmorMaterial("armor_material_amethyst", Reference.MOD_ID + ":amethyst", 14, 
@@ -46,6 +49,7 @@ public class ModItems {
 	
 	//Tools
 	public static final Item TRANSFORMATION_WAND = new ItemTransformationWand("transformation_wand");
+	public static final Item FLAMINGO_SWORD = new ToolFlamingoSword("flamingo_sword", MATERIAL_FLAMINGO);
 	public static final ItemSword AMETHYST_SWORD = new ToolSword("amethyst_sword", MATERIAL_AMETHYST);
 	public static final ItemSpade AMETHYST_SHOVEL = new ToolShovel("amethyst_shovel", MATERIAL_AMETHYST);
 	public static final ItemPickaxe AMETHYST_PICKAXE = new ToolPickaxe("amethyst_pickaxe", MATERIAL_AMETHYST);
