@@ -3,7 +3,6 @@ package com.anacampserosrose.enchantedforestmod.blocks;
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 import com.anacampserosrose.enchantedforestmod.util.IMetaName;
 import com.anacampserosrose.enchantedforestmod.util.ItemBlockVariants;
 import com.anacampserosrose.enchantedforestmod.util.handlers.EnumHandler;
@@ -24,8 +23,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class BlockPlank extends Block implements IMetaName, IHasModel
-{
+public class BlockPlank extends Block implements IMetaName {
+
 	public static final PropertyEnum<EnumHandler.EnumType> VARIANT = PropertyEnum.<EnumHandler.EnumType>create("variant", EnumHandler.EnumType.class);
 	
 	private String name;
@@ -91,12 +90,4 @@ public class BlockPlank extends Block implements IMetaName, IHasModel
 		return EnumHandler.EnumType.values()[stack.getItemDamage()].getName();
 	}
 	
-	@Override
-	public void registerModels() 
-	{
-		for(int i = 0; i < EnumHandler.EnumType.values().length; i++)
-		{
-			EnchantedForestMod.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "planks_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
-		}
 	}
-}

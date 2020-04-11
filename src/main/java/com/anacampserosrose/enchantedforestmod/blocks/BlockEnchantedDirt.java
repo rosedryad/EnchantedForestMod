@@ -3,7 +3,6 @@ package com.anacampserosrose.enchantedforestmod.blocks;
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
 
 import net.minecraft.block.Block;
@@ -19,14 +18,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.IPlantable;
 
-public class BlockEnchantedDirt extends BlockBase implements IHasModel
+public class BlockEnchantedDirt extends BlockBase
 {
 
 	public BlockEnchantedDirt(String name, Material material) 
 	{
-		super(name, material);
+		super(name, Material.GROUND);
 		setSoundType(SoundType.GROUND);
 		setLightLevel(0.1F);
+		setHarvestLevel("shovel", 1);
 	}
 	
 	@Override
@@ -35,11 +35,6 @@ public class BlockEnchantedDirt extends BlockBase implements IHasModel
 		return true;
 	}
 
-	@Override
-	public void registerModels() 
-	{
-		EnchantedForestMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return state;
 	}

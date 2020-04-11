@@ -3,7 +3,6 @@ package com.anacampserosrose.enchantedforestmod.blocks;
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
@@ -18,7 +17,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class EFFlower extends BlockBush implements IHasModel {
+public class EFFlower extends BlockBush {
 
 	public EFFlower(String name, Material plants) 
     {
@@ -43,11 +42,6 @@ public class EFFlower extends BlockBush implements IHasModel {
         return Block.EnumOffsetType.XZ;
     }	
 
-    @Override
-	public void registerModels() 
-	{
-		EnchantedForestMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
 	
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return state;

@@ -3,7 +3,6 @@ package com.anacampserosrose.enchantedforestmod.blocks;
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
@@ -24,7 +23,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ClearCrystalCluster extends BlockBush implements IHasModel {
+public class ClearCrystalCluster extends BlockBush {
 
 	public ClearCrystalCluster(String name, Material plants) 
     {
@@ -55,11 +54,6 @@ public class ClearCrystalCluster extends BlockBush implements IHasModel {
         return Block.EnumOffsetType.XZ;
     }	
 
-    @Override
-	public void registerModels() 
-	{
-		EnchantedForestMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
 	
 	public IBlockState getStateForEntityRender(IBlockState state) {
 		return state;

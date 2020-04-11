@@ -7,7 +7,6 @@ import javax.annotation.Nullable;
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 import com.anacampserosrose.enchantedforestmod.util.IMetaName;
 import com.anacampserosrose.enchantedforestmod.util.ItemBlockVariants;
 import com.anacampserosrose.enchantedforestmod.util.handlers.EnumHandler;
@@ -37,7 +36,7 @@ import net.minecraft.world.gen.feature.WorldGenTrees;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.event.terraingen.TerrainGen;
 
-public class BlockSaplings extends BlockBush implements IGrowable, IMetaName, IHasModel
+public class BlockSaplings extends BlockBush implements IGrowable, IMetaName
 {	
 	public static final PropertyInteger STAGE = PropertyInteger.create("stage", 0, 1);
     protected static final AxisAlignedBB SAPLING_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
@@ -134,14 +133,6 @@ public class BlockSaplings extends BlockBush implements IGrowable, IMetaName, IH
 		return new BlockStateContainer(this, new IProperty[] {VARIANT, STAGE});	
 	}
 	
-	@Override
-	public void registerModels() 
-	{
-		for(int i = 0; i < EnumHandler.EnumType.values().length; i++)
-		{
-			EnchantedForestMod.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "sapling_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
-		}
-	}
 	
 	//Tree Code
 	

@@ -5,7 +5,6 @@ import javax.annotation.Nullable;
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 import com.anacampserosrose.enchantedforestmod.util.IMetaName;
 import com.anacampserosrose.enchantedforestmod.util.ItemBlockVariants;
 import com.anacampserosrose.enchantedforestmod.util.handlers.EnumHandler;
@@ -22,7 +21,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
-public class BlockLogs extends BlockLog implements IMetaName, IHasModel
+public class BlockLogs extends BlockLog implements IMetaName
 {
 	public static final PropertyEnum<EnumHandler.EnumType> VARIANT = PropertyEnum.<EnumHandler.EnumType>create("variant", EnumHandler.EnumType.class, new Predicate<EnumHandler.EnumType>()
 	{
@@ -131,12 +130,5 @@ public class BlockLogs extends BlockLog implements IMetaName, IHasModel
 		return EnumHandler.EnumType.values()[stack.getItemDamage()].getName();
 	}
 	
-	@Override
-	public void registerModels() 
-	{
-		for(int i = 0; i < EnumHandler.EnumType.values().length; i++)
-		{
-			EnchantedForestMod.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "log_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
-		}
-	}	
+	
 }

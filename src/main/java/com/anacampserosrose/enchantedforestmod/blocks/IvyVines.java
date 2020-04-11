@@ -5,7 +5,6 @@ import javax.annotation.Nullable;
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 import com.anacampserosrose.enchantedforestmod.util.ItemBlockVariants;
 
 import net.minecraft.block.BlockVine;
@@ -111,15 +110,7 @@ public class IvyVines extends BlockVine implements IShearable {
 	{
 		return false;
 	}
-	public void registerModels() 
-	{
-		EnchantedForestMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
-	/*
-	public IBlockState getStateForEntityRender(IBlockState state) {
-		return state;
-	}
-	*/
+
 
 }
 

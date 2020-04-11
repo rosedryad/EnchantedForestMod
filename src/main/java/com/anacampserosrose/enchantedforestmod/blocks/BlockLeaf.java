@@ -8,7 +8,6 @@ import javax.annotation.Nullable;
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 import com.anacampserosrose.enchantedforestmod.util.IMetaName;
 import com.anacampserosrose.enchantedforestmod.util.ItemBlockVariants;
 import com.anacampserosrose.enchantedforestmod.util.handlers.EnumHandler;
@@ -35,7 +34,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockLeaf extends BlockLeaves implements IMetaName, IHasModel
+public class BlockLeaf extends BlockLeaves implements IMetaName
 {
 	public static final PropertyEnum<EnumHandler.EnumType> VARIANT = PropertyEnum.<EnumHandler.EnumType>create("variant", EnumHandler.EnumType.class, new Predicate<EnumHandler.EnumType>()
 	{
@@ -162,12 +161,4 @@ public class BlockLeaf extends BlockLeaves implements IMetaName, IHasModel
 	}
 
 	
-	@Override
-	public void registerModels() 
-	{
-		for(int i = 0; i < EnumHandler.EnumType.values().length; i++)
-		{
-			EnchantedForestMod.proxy.registerVariantRenderer(Item.getItemFromBlock(this), i, "leaves_" + EnumHandler.EnumType.values()[i].getName(), "inventory");
-		}
-	}
 }
