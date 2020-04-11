@@ -114,14 +114,13 @@ public class EntityHedgehog extends EntityAnimal implements IAnimals{
     {
         return TEMPTATION_ITEMS.contains(stack.getItem());
     }
-    /*
+   
     @Nullable
     @Override
     protected ResourceLocation getLootTable()
     {
         return ModLootTable.HEDGEHOG_LOOT;
     }
-    */
   
     
     @Override

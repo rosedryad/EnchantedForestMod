@@ -40,7 +40,10 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
+@SideOnly(Side.CLIENT)
 public class EntityFlamingo extends EntityAnimal implements IAnimals{
     private static final Set<Item> TEMPTATION_ITEMS = Sets.newHashSet(Items.FISH, Items.COOKED_FISH);
 	private static final DataParameter<Byte> TYPE = EntityDataManager.<Byte>createKey(EntityFlamingo.class, DataSerializers.BYTE);
@@ -66,9 +69,8 @@ public class EntityFlamingo extends EntityAnimal implements IAnimals{
 	        this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
 	        this.tasks.addTask(3, new EntityAITempt(this, 1.25D, false, TEMPTATION_ITEMS));
 	        this.tasks.addTask(4, new EntityAIFollowParent(this, 1.25D));
-	        this.tasks.addTask(5, new EntityAIFollow(this, 1.0D, 3.0F, 7.0F));
-	        this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
-	        this.tasks.addTask(7, new EntityAILookIdle(this));
+	        this.tasks.addTask(5, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
+	        this.tasks.addTask(6, new EntityAILookIdle(this));
 	    }
     @Override
     protected void applyEntityAttributes()
@@ -166,8 +168,25 @@ public class EntityFlamingo extends EntityAnimal implements IAnimals{
     @Override
     public boolean attackEntityAsMob(Entity entityIn)
     {
+        boolean flag = entityIn.attackEntityFrom(DamageSource.causeMobDamage(this), (float)((int)this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).getAttributeValue()));
+
+        if (flag)
+        {
+            this.applyEnchantments(this, entityIn);
+        }
+
+        return flag;
+    }
+    
+    /*
+    
+    @Override
+    public boolean attackEntityAsMob(Entity entityIn)
+    {
         return entityIn.attackEntityFrom(DamageSource.causeMobDamage(this), 3.0F);
     }
+    
+    */
     
     public int getFlamingoType()
     {
