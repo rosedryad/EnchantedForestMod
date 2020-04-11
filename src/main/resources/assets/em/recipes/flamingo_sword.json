@@ -1,0 +1,23 @@
+{
+    "type": "minecraft: crafting_shaped",
+    "pattern": [
+        "DDD",
+        " # ",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "em:flamingo_feather"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+           "item": "em:flamingo_sword", 
+           "count": 1
+    }
+}
