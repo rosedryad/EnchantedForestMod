@@ -2,11 +2,10 @@ package com.anacampserosrose.enchantedforestmod.items.tools;
 
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
 import net.minecraft.item.ItemSword;
 
-public class ToolSword extends ItemSword implements IHasModel {
+public class ToolSword extends ItemSword {
 
 	public ToolSword(String name, ToolMaterial material)
 	{
@@ -18,9 +17,5 @@ public class ToolSword extends ItemSword implements IHasModel {
 		ModItems.ITEMS.add(this);
 	}
 	
-	@Override
-	public void registerModels() 
-	{
-		EnchantedForestMod.proxy.registerItemRenderer(this, 0, "inventory");
-	}
+
 }

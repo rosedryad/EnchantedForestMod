@@ -2,11 +2,10 @@ package com.anacampserosrose.enchantedforestmod.items.tools;
 
 import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
 import net.minecraft.item.ItemPickaxe;
 
-public class ToolPickaxe extends ItemPickaxe implements IHasModel {
+public class ToolPickaxe extends ItemPickaxe {
 
 	public ToolPickaxe(String name, ToolMaterial material)
 	{
@@ -18,9 +17,4 @@ public class ToolPickaxe extends ItemPickaxe implements IHasModel {
 		ModItems.ITEMS.add(this);
 	}
 	
-	@Override
-	public void registerModels() 
-	{
-		EnchantedForestMod.proxy.registerItemRenderer(this, 0, "inventory");
-	}
 }
