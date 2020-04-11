@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class ModSounds 
 {
 public static SoundEvent ENTITY_FLAMINGO_AMBIENT, ENTITY_FLAMINGO_HURT, ENTITY_FLAMINGO_DEAD, ENTITY_FLAMINGO_STEP;
+public static SoundEvent ENTITY_HEDGEHOG_AMBIENT, ENTITY_HEDGEHOG_HURT, ENTITY_HEDGEHOG_DEAD, ENTITY_HEDGEHOG_STEP;
 
     public static void init()
     {
@@ -19,6 +20,11 @@ public static SoundEvent ENTITY_FLAMINGO_AMBIENT, ENTITY_FLAMINGO_HURT, ENTITY_F
         ENTITY_FLAMINGO_HURT = registerSound("entity.flamingo.hurt");
         ENTITY_FLAMINGO_DEAD = registerSound("entity.flamingo.dead");
         ENTITY_FLAMINGO_STEP = SoundEvents.ENTITY_CHICKEN_STEP;
+        
+        ENTITY_HEDGEHOG_AMBIENT = SoundEvents.ENTITY_RABBIT_AMBIENT;
+        ENTITY_HEDGEHOG_HURT = SoundEvents.ENTITY_RABBIT_HURT;
+        ENTITY_HEDGEHOG_DEAD = SoundEvents.ENTITY_RABBIT_DEATH;
+        ENTITY_HEDGEHOG_STEP = SoundEvents.ENTITY_CHICKEN_STEP;
 
     }
     

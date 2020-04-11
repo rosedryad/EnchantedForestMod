@@ -10,10 +10,13 @@ import com.anacampserosrose.enchantedforestmod.blocks.CrystalBlock;
 import com.anacampserosrose.enchantedforestmod.blocks.CrystalCluster;
 import com.anacampserosrose.enchantedforestmod.blocks.SignPost;
 import com.anacampserosrose.enchantedforestmod.blocks.SproutPlanter;
+import com.anacampserosrose.enchantedforestmod.blocks.slab.EFBlockDoubleSlab;
+import com.anacampserosrose.enchantedforestmod.blocks.slab.EFBlockHalfSlab;
 import com.anacampserosrose.enchantedforestmod.util.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 
 import com.anacampserosrose.enchantedforestmod.blocks.AmethystFairyOre;
 import com.anacampserosrose.enchantedforestmod.blocks.AmethystOre;
@@ -34,6 +37,17 @@ public class ModBlocks
 {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
+	
+	public static EFBlockHalfSlab custom_slab_half;
+	public static EFBlockDoubleSlab custom_slab_double;
+	public static Block ivy_planks;
+	public static Block purple_wisteria_planks;
+	public static EFBlockHalfSlab ivy_slab_half;
+	public static EFBlockHalfSlab purple_wisteria_slab_half;
+	public static EFBlockDoubleSlab ivy_slab_double;
+	public static EFBlockDoubleSlab purple_wisteria_slab_double;
+
+	
 	//Grass
 	public static final Block DIRT_ENCHANTED = new BlockEnchantedDirt("dirt_enchanted", Material.GRASS);
 	public static final Block GRASS_ENCHANTED = new BlockEnchantedGrass("grass_enchanted", Material.GRASS);
@@ -45,11 +59,25 @@ public class ModBlocks
 	public static final Block SAPLINGS = new BlockSaplings("sapling");
 	//TODO: Add ivy vine to WorldGenIvyTree
 	public static final Block IVY_VINE = new IvyVines("ivy_vine", Material.VINE);
+
+	//TODO: Slabs
+	//
+	//
+	//
+	
+	//TODO: Stairs
+	//
+	//
+	//
+	
+	//TODO: Doors
+	//
+	//
+	//
 	
 	//Ores
 	public static final Block CLEAR_QUARTZ_ORE = new ClearQuartzOre("clear_quartz_ore", Material.ROCK);
 	public static final Block AMETHYST_ORE = new AmethystOre("amethyst_ore", Material.ROCK);
-	//TODO: Add redstone sparkles:
 	public static final Block AMETHYST_FAIRY_ORE = new AmethystFairyOre("amethyst_fairy_ore", Material.ROCK);
 	
 	//Crystal Clusters
@@ -135,5 +163,4 @@ public class ModBlocks
 	public static final Block PURPLE_CONEFLOWER = new EFFlower("purple_coneflower", Material.PLANTS);
 	public static final Block PURPLE_ROCK_CRESS = new EFFlower("purple_rock_cress", Material.PLANTS);
 	public static final Block YELLOW_GERBERA_DAISY = new EFFlower("yellow_gerbera_daisy", Material.PLANTS);
-
 }

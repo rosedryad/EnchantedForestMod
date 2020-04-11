@@ -1,5 +1,6 @@
 package com.anacampserosrose.enchantedforestmod.init;
 
+import com.anacampserosrose.enchantedforestmod.world.biomes.BiomeFairyForest;
 import com.anacampserosrose.enchantedforestmod.world.biomes.BiomeMagic;
 
 import net.minecraft.world.biome.Biome;
@@ -13,10 +14,12 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class EFBiomes {
 
 public static final Biome MAGIC = new BiomeMagic();
+public static final Biome FAIRY_FOREST = new BiomeFairyForest();
 
 	public static void registerBiomes()
 {
 	initBiome(MAGIC, "Magic", BiomeType.WARM, Type.FOREST, Type.LUSH, Type.MAGICAL, Type.HILLS, Type.RIVER, Type.MUSHROOM, Type.WATER);
+	initBiome(FAIRY_FOREST, "Fairy Forest", BiomeType.WARM, Type.FOREST, Type.DENSE, Type.MAGICAL, Type.PLAINS);
 }
 
 private static Biome initBiome(Biome biome, String name, BiomeType biomeType, Type... types)	
