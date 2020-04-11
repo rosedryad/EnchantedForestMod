@@ -10,5 +10,6 @@ public class Reference {
 	public static final String COMMON_PROXY_CLASS = "com.anacampserosrose.enchantedforestmod.proxy.CommonProxy";
 	
 	public static final int ENTITY_FLAMINGO = 120;
+	public static final int ENTITY_HEDGEHOG = 90;
 	
 }
