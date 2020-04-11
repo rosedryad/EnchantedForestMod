@@ -1,11 +1,43 @@
+//Creative Tab
+itemGroup.enchantedforesttab.name=Enchanted Forest Mod
+
+//Entities
+entity.flamingo.name=Flamingo
+entity.hedgehog.name=Hedgehog
+
 //Items
-item.flamingo.name=Flamingo
+item.flamingo_feather.name=Flamingo Feather
+
+//Tools
+item.transformation_wand.name=Transformation Wand
+item.flamingo_sword.name=Flamingo Sword
+item.amethyst_sword.name=Amethyst Sword
+item.amethyst_shovel.name=Amethyst Shovel
+item.amethyst_pickaxe.name=Amethyst Pickaxe
+item.amethyst_axe.name=Amethyst Axe
+item.amethyst_hoe.name=Amethyst Hoe
+
+//Armor
+item.amethyst_helmet.name=Amethyst Helmet
+item.amethyst_chestplate.name=Amethyst Chestplate
+item.amethyst_leggings.name=Amethyst Leggings
+item.amethyst_boots.name=Amethyst Boots
+
+//Grass
+tile.dirt_enchanted.name=Enchanted Dirt
+tile.grass_enchanted.name=Enchanted Grass
 
 //Trees
 tile.log_ivy.name=Ivy Log
 tile.leaves_ivy.name=Ivy Leaves
 tile.sapling_ivy.name=Ivy Sapling
 tile.planks_ivy.name=Ivy Planks
+tile.ivy_vine.name=Ivy Vine
+tile.log_purple_wisteria.name=Purple Wisteria Log
+tile.leaves_purple_wisteria.name=Purple Wisteria Leaves
+tile.sapling_purple_wisteria.name=Purple Wisteria Sapling
+tile.planks_purple_wisteria.name=Purple Wisteria Planks
+tile.purple_wisteria_vine.name=Purple Wisteria Vine
 
 //Plushies
 tile.plushie_hedgehog.name=Hedgehog Plushie
@@ -78,10 +110,12 @@ tile.yellow_gerbera_daisy.name=Yellow Gerbera Daisy
 
 //Ores
 tile.amethyst_ore.name=Amethyst Ore
+tile.amethyst_fairy_ore.name=Amethyst Fairy Ore
 tile.clear_quartz_ore.name=Clear Quartz Ore
 
 //Crystals Clusters
 tile.amethyst_quartz_cluster.name=Amethyst Cluster
+tile.amethyst_fairy_quartz_cluster.name=Amethyst Fairy Quartz Cluster
 tile.clear_quartz_cluster.name=Clear Quartz Cluster
 tile.rainbow_aura_quartz_cluster.name=Rainbow Aura Quartz Cluster
 tile.titanium_aura_quartz_cluster.name=Titanium Aura Quartz Cluster
