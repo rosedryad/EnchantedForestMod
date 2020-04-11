@@ -2,6 +2,7 @@ package com.anacampserosrose.enchantedforestmod.util.handlers;
 
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
+import com.anacampserosrose.enchantedforestmod.init.ModSounds;
 import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
 import net.minecraft.block.Block;
@@ -10,6 +11,8 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @EventBusSubscriber
 public class RegistryHandler 
@@ -27,6 +30,7 @@ public class RegistryHandler
 	}
 	
 	@SubscribeEvent
+	@SideOnly(Side.CLIENT)
 	public static void onModelRegister(ModelRegistryEvent event)
 	{
 		for(Item item : ModItems.ITEMS)
@@ -45,7 +49,6 @@ public class RegistryHandler
 				((IHasModel)block).registerModels();
 			}
 			
+		}
 	}
-	}
-	
 }

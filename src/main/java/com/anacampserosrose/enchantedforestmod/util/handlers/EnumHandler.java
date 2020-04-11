@@ -6,8 +6,9 @@ public class EnumHandler
 {
 	public static enum EnumType implements IStringSerializable
 	{
-		IVY(0, "ivy");
-		
+		IVY(0, "ivy"),
+		PURPLE_WISTERIA(1, "purple_wisteria");
+
 		private static final EnumType[] META_LOOKUP = new EnumType[values().length];
 		private final int meta;
 		private final String name, unlocializedName;
@@ -58,5 +59,6 @@ public class EnumHandler
 				META_LOOKUP[enumtype.getMeta()] = enumtype;
 			}
 		}
-	}
+}
+	
 }
