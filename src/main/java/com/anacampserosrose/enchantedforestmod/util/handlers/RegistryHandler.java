@@ -1,9 +1,9 @@
 package com.anacampserosrose.enchantedforestmod.util.handlers;
 
+import com.anacampserosrose.enchantedforestmod.EnchantedForestMod;
 import com.anacampserosrose.enchantedforestmod.init.ModBlocks;
 import com.anacampserosrose.enchantedforestmod.init.ModItems;
 import com.anacampserosrose.enchantedforestmod.init.ModSounds;
-import com.anacampserosrose.enchantedforestmod.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -35,20 +35,15 @@ public class RegistryHandler
 	{
 		for(Item item : ModItems.ITEMS)
 		{
-			if(item instanceof IHasModel)
-			{
-				((IHasModel)item).registerModels();
-			}
+			EnchantedForestMod.proxy.registerItemRenderer(item, 0, "inventory");
 		
 		}
 		
 		for(Block block : ModBlocks.BLOCKS)
-		{
-			if(block instanceof IHasModel)
-			{
-				((IHasModel)block).registerModels();
-			}
+		{ 
 			
+			EnchantedForestMod.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
 		}
+		
 	}
 }
