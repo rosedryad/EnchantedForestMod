@@ -10,13 +10,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+@SideOnly(Side.CLIENT)
 public class RenderFlamingo extends RenderLiving<EntityFlamingo>
 {
     public static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/entity/flamingo.png");
 
     public RenderFlamingo(RenderManager manager)
     {
-        super(manager, new ModelFlamingo(), 0.6F);
+        super(manager, new ModelFlamingo(), 0.4F);
     }
     
     @Override
